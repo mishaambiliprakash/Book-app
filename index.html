@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book App</title>
+</head>
+<body>
+ <h2>Book Details</h2>  
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-6 col-md-12 col-lg-3">
+            <table class="table table-borderless">
+
+                <tr>
+                    <td>Book name</td>
+                    <td><input id="bname" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Author</td>
+                    <td><input id="auth" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Publisher</td>
+                    <td><input id="publish" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Distributer</td>
+                    <td><input id="distri" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td><input id="pric" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button onclick="buttonclic()" class="btn btn-warning">SUBMIT</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    function buttonclic(){
+        var getname=document.getElementById("bname").value
+        var getauth=document.getElementById("auth").value
+        var getpublish=document.getElementById("publish").value
+        var getdistri=document.getElementById("distri").value
+        var getprice=document.getElementById("pric").value
+        
+        console.log(getname)
+        console.log(getauth)
+        console.log(getpublish)
+        console.log(getdistri)
+        console.log(getprice)
+
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
